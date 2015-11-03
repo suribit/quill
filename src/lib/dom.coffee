@@ -416,6 +416,7 @@ dom = _.extend(dom,
 
   EMBED_TAGS: {
     'IMG'
+    'IFRAME'
   }
 
   LINE_TAGS: {
@@ -437,6 +438,7 @@ dom = _.extend(dom,
     'EMBED'
     'HR'
     'IMG'
+    'IFRAME'
     'INPUT'
     'KEYGEN'
     'LINK'

@@ -61,6 +61,11 @@ class Format
       tag: 'IMG'
       attribute: 'src'
 
+    video:
+      type: Format.types.EMBED
+      tag: 'IFRAME'
+      attribute: 'src'
+
     align:
       type: Format.types.LINE
       style: 'textAlign'
@@ -82,6 +87,7 @@ class Format
   constructor: (@config) ->
 
   add: (node, value) ->
+    console.log(node)
     return this.remove(node) unless value
     return node if this.value(node) == value
     if _.isString(@config.parentTag)
